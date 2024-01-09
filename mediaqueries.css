@@ -41,6 +41,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .header nav {
+        height: 60px;
+    }
+
     #desktop-nav {
         display: none;
     }
@@ -75,6 +79,7 @@
     .section__pic-container {
         width: 275px;
         height: 275px;
+        justify-content: center;
         margin: 0 auto 2rem;
     }
 
@@ -88,6 +93,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    .header nav {
+            height: 60px;
+    }
 
     #contact,
     footer {
