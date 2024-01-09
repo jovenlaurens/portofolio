@@ -5,37 +5,39 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-function stickyHeader() {
-    const header = document.querySelector(".header");
-    header.classList.toggle("sticky", window.scrollY > 0)
-}
+window.addEventListener('scroll', () => {
+    const section1 = document.getElementById('projects');
+    const section2 = document.getElementById('experience');
 
-// Animation 
+    const checkAndSetMode = (targetSection, darkMode, lightMode) => {
+        const sectionTop = targetSection.offsetTop;
+        const sectionHeight = targetSection.offsetHeight;
+        const scrollPosition = window.scrollY;
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the nav element
-    var nav = document.querySelector('.nav');
+        const scrollStart = sectionTop - window.innerHeight / 2;
+        const scrollEnd = sectionTop + sectionHeight - window.innerHeight / 2;
 
-    // Add the 'animate' class to trigger the animation only on the first load
-    nav.classList.add('animate');
+        if (scrollPosition >= scrollStart && scrollPosition <= scrollEnd) {
+            document.body.style.backgroundColor = darkMode.backgroundColor;
+            document.body.style.color = darkMode.textColor;
+            return true;
+        }
+        document.body.style.backgroundColor = lightMode.backgroundColor;
+        document.body.style.color = lightMode.textColor;
+        return false;
+    };
 
-    // Remove the 'animate' class after the animation ends
-    nav.addEventListener('animationend', function() {
-        nav.classList.remove('animate');
-    });
+    const darkMode = {
+        backgroundColor: '#333',
+        textColor: '#fff'
+    };
+
+    const lightMode = {
+        backgroundColor: '#fff',
+        textColor: '#333'
+    };
+
+    if (!checkAndSetMode(section1, darkMode, lightMode)) {
+        checkAndSetMode(section2, darkMode, lightMode);
+    }
 });
-
-// Scroll Reveal Animation
-
-const sr = ScrollReveal({
-    origin: "top",
-    distance: "80px",
-    duration: 2000,
-    reset: true
-});
-
-// Scroll Home
-sr.reveal(".home-title", {});
-sr.reveal(".home-subtitle", { delay: 200 });
-sr.reveal(".home-img", { delay: 400 });
-sr.reveal(".home-social-icon", { interval: 200 });

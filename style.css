@@ -73,6 +73,8 @@
 body {
     font-family: "Poppins", sans-serif;
     padding-top: 17vh;
+    background-color: white;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 html {
@@ -81,6 +83,11 @@ html {
 
 p {
     color: var(--body-text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -118,7 +125,6 @@ nav,
 nav {
     align-items: center;
     height: 60px;
-    animation-iteration-count: 1;
 }
 
 .nav-links {
@@ -236,9 +242,14 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    margin: 0 10rem;
+    margin: 0 5%;
     box-sizing: border-box;
     min-height: fit-content;
+}
+
+section,
+.section-container {
+    height: fit-content;
 }
 
 .section-container {
@@ -257,8 +268,8 @@ section {
 
 .section__pic-container {
     margin: auto 0;
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: 100%;
     display: flex;
 }
 
@@ -366,30 +377,38 @@ section {
     position: relative;
 }
 
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-    display: flex;
+.about-pic-container {
+    width: calc(35% - 20px);
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+
+.about-content-container {
+    width: calc(65% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-content-container {
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-details-container {
+    display: flex;
+    gap: 2rem;
 }
 
 .details-container {
@@ -411,6 +430,12 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.text-container {
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
 }
 
 /* EXPERIENCE SECTION */
@@ -469,6 +494,7 @@ article .icon {
     width: 80%;
     max-width: 100px;
     transition: all 0.3s;
+    filter: contrast(90%);
 }
 
 .skills-containers:hover .skills__img {
