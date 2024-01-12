@@ -1,0 +1,43 @@
+/* GENERAL */
+--title-color: 
+/* BODY */
+--body-text-color: rgb(85, 85, 85);
+--body-background-color: rgb(14, 14, 12);
+
+/* HEADER */
+--header-background-color: rgb(14, 14, 12);
+
+/* NAV */
+--nav-text-color: rgb(255, 255, 255);
+--nav-background-color: rgb(14, 14, 12);
+--nav-hover-color: rgb(181, 181, 181);
+
+/* HAMBURGER NAV */
+--hamburger-nav-background-color: rgb(14, 14, 12);
+--hamburger-nav-text-color: rgb(255, 255, 255);
+
+/* BUTTON */
+--button-border-color: rgb(53, 53, 53);
+--button-background-color: rgb(14, 14, 12);
+--button-text-color: rgb(255, 255, 255);
+
+/* ABOUT */
+--about-background-color: rgb(14, 14, 12);
+--about-border-background-color: rgb(53, 53, 53);
+--about-border-color: rgb(163, 163, 163);
+
+/* SKILLS */
+--skills-text-color: rgb(85, 85, 85);
+
+
+/* EXPERIENCE */
+--experience-background-color: rgb(14, 14, 12);
+--experience-border-background-color: rgb(53, 53, 53);
+--experience-border-color: rgb(163, 163, 163);
+--experience-text-color: rgb(85, 85, 85);
+--experience-title-color: rgb(255, 255, 255);
+
+/* CONTACT */
+--contact-border-background-color: rgb(53, 53, 53);
+--contact-border-color: rgb(163, 163, 163);
+

@@ -9,7 +9,17 @@ window.addEventListener('scroll', () => {
     const section1 = document.getElementById('projects');
     const section2 = document.getElementById('experience');
 
-    const checkAndSetMode = (targetSection, darkMode, lightMode) => {
+    function enableDarkMode() {
+        document.documentElement.classList.add('dark-mode');
+        document.documentElement.classList.remove('light-mode');
+    }
+
+    function enableLightMode() {
+        document.documentElement.classList.remove('dark-mode');
+        document.documentElement.classList.add('light-mode');
+    }
+
+    const checkAndSetMode = (targetSection) => {
         const sectionTop = targetSection.offsetTop;
         const sectionHeight = targetSection.offsetHeight;
         const scrollPosition = window.scrollY;
@@ -18,26 +28,37 @@ window.addEventListener('scroll', () => {
         const scrollEnd = sectionTop + sectionHeight - window.innerHeight / 2;
 
         if (scrollPosition >= scrollStart && scrollPosition <= scrollEnd) {
-            document.body.style.backgroundColor = darkMode.backgroundColor;
-            document.body.style.color = darkMode.textColor;
+            enableDarkMode();
             return true;
         }
-        document.body.style.backgroundColor = lightMode.backgroundColor;
-        document.body.style.color = lightMode.textColor;
+        enableLightMode();
         return false;
     };
 
-    const darkMode = {
-        backgroundColor: '#333',
-        textColor: '#fff'
-    };
-
-    const lightMode = {
-        backgroundColor: '#fff',
-        textColor: '#333'
-    };
-
-    if (!checkAndSetMode(section1, darkMode, lightMode)) {
-        checkAndSetMode(section2, darkMode, lightMode);
+    if (!checkAndSetMode(section1)) {
+        checkAndSetMode(section2);
     }
 });
+
+// Sending email
+function sendEmail() {
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
+    
+    const serviceID = "service_kt2yeqe";
+    const templateID = "template_pf7ddi2";
+    
+    emailjs.send(serviceID, templateID, params)
+    .then(
+        res => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("your message sent successfully")
+        })
+    .catch((err) => console.log(err));
+}

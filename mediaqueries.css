@@ -56,10 +56,6 @@
         display: flex;
     }
 
-    #experience,
-    .experience-details-container {
-        margin-top: 2rem;
-    }
 
     #profile,
     .section-container {
@@ -78,30 +74,31 @@
     }
     
     .skills-containers {
-        width: calc(100% / 4);
+        width: calc(100% / 2);
     }
 }
+
+/* MOBILE VIEW */
 
 @media screen and (max-width: 768px) {
     .header nav {
             height: 60px;
     }
 
-    #contact,
     footer {
         height: 40vh;
     }
 
     #profile {
         height: 83vh;
-        margin-bottom: 0;
+        margin-bottom: 100px;
     }
 
     article {
         font-size: 1rem;
     }
 
-    footer nav {
+    nav {
         height: fit-content;
         margin-bottom: 2rem;
     }
@@ -110,23 +107,15 @@
     }
     
     .about-containers,
-    .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
     }
 
-    .contact-info-container {
-        margin: 0;
-    }
 
-    .contact-info-container p,
     .nav-links li a {
         font-size: 1rem;
     }
 
-    .experience-sub-title {
-        font-size: 1.25rem;
-    }
 
     .logo {
         font-size: 1.5rem;
@@ -149,10 +138,73 @@
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 4.5rem;
     }
 
     .text-container {
         text-align: justify;
+    }
+    
+    /* EXPERIENCE */
+    .experience-list {
+        padding-left: 25px;
+    }
+
+    .experience-container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+        --img-diameter: 50px;
+        --circle-diameter: calc(var(--img-diameter) + 5px);
+        --top: 0px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container img, .right-container img {
+        left: calc((var(--circle-diameter) - var(--img-diameter)) / 2);
+    }
+
+    .left-container .circle, .right-container .circle {
+        left: 0%;
+    }
+
+    .left-container-arrow, .right-container-arrow {
+        border-right: 15px solid white;
+        border-left: 0;
+        left: 67.5px;
+        right: 0px;
+    }
+
+    .experience-list::after {
+        left: 52.5px;
+        margin-left: -2.5px;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+    }
+
+    .project-container {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* CONTACT */
+
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-info, .contact-form{
+        width: 100%;
+        padding: 0;
     }
 }
