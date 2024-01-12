@@ -402,27 +402,10 @@ section,
     margin: 0% 5%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     height: 80vh;
     animation: fade-up 1000ms 1000ms backwards;
-}
-
-.section__pic-container {
-    margin: auto 0;
-    height: auto;
-    width: 100%;
-    display: flex;
-}
-
-.section__pic-mask {
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.section__pic {
-    width: 100%;
-    transform: scale(1.25);
-    padding-right: 3rem;
 }
 
 .section__text {
@@ -435,6 +418,7 @@ section,
 }
 
 .section__text__p1 {
+    font-size: 3rem;
     text-align: center;
 }
 

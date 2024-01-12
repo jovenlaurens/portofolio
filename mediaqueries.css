@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .about-pic-container, .about-content-container {
+    .about-content-container {
         width: calc(50% - 20px);
     }
     .header nav {
@@ -57,7 +57,6 @@
     }
 
 
-    #profile,
     .section-container {
         display: block;
     }
@@ -92,6 +91,7 @@
     #profile {
         height: 83vh;
         margin-bottom: 100px;
+        align-items: center;
     }
 
     article {
