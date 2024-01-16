@@ -58,8 +58,6 @@
         display: block;
     }
 
-
-
     .about-containers {
         margin-top: 0;
     }
@@ -72,6 +70,48 @@
 /* MOBILE VIEW */
 
 @media screen and (max-width: 768px) {
+
+    /* PROFILE */
+    .section__text .section__text__p1 {
+        font-size: 3rem;
+    }
+    .section__text .title {
+        font-size: 3.5rem;
+    }
+    
+    /* SKILLS */
+    .skills__img {
+        width: 65%;
+    }
+
+    /* PROJECTS */
+    .project-tag {
+        font-size: 0.75rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+
+    .project-sub-title {
+        font-size: 1rem;
+    }
+
+    /* ABOUT */
+
+    .details-container p {
+        font-size: 0.9rem;
+    }
+
+    .details-container {
+        padding: 1rem;
+    }
+
+    .about-details-container {
+        display: flex;
+        gap: 1rem;
+    }
+
     .header nav {
             height: 60px;
     }
@@ -131,7 +171,7 @@
     }
 
     .title {
-        font-size: 4.5rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
     }
 
@@ -144,10 +184,15 @@
         padding-left: 25px;
     }
 
+    .experience-text-box {
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+
     .experience-container {
         width: 100%;
         padding-left: 50px;
-        padding-right: 25px;
+        padding-right: 0px;
         --img-diameter: 50px;
         --circle-diameter: calc(var(--img-diameter) + 5px);
         --top: 0px;
@@ -177,6 +222,19 @@
         margin-left: -2.5px;
     }
 
+    .experience-date {
+        font-size: 1rem;
+    }
+
+    .experience-text-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .experience-text-box h3 {
+        font-size: 1rem;
+    }
+
+
     .desktop {
         display: none;
     }
@@ -199,5 +257,40 @@
     .contact-info, .contact-form{
         width: 100%;
         padding: 0;
+    }
+
+    .contact-form h2 {
+        font-size: 3rem;
+    }
+
+    .contact-form p {
+        font-size: 1rem;
+    }
+    
+    .contact-form .input-box span {
+        font-size: 1.25rem;
+    }
+
+    .contact-form .input-box input[type="submit"] {
+        font-size: 1.25rem;
+        width: 200px;
+    }
+
+    .contact-info-container h2 {
+        font-size: 1.5rem;
+    }
+
+
+    /* FOOTER */
+    footer p {
+        font-size: 0.75rem;
+    }
+
+    .back-to-top p {
+        font-size: 0.75rem;
+    }
+
+    .back-to-top {
+        padding-right: 0;
     }
 }
