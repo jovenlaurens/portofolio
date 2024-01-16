@@ -2,34 +2,19 @@
 :root {
     /* GENERAL */
     --title-color: rgb(0, 0, 0);
+    --sub-title-color: rgb(0, 0, 0);
     --section-title-color: rgb(140, 140, 115);
     --background-color: rgb(250, 250, 249);
     --text-color: rgb(0,0,0);
+    --border-color: rgb(53, 53, 53);
 
     /* BODY */
     --body-text-color: rgb(85, 85, 85);
-    --body-background-color: rgb(250, 250, 249);
-
-    /* HEADER */
-    --header-background-color: rgb(250, 250, 249);
 
     /* NAV */
-    --nav-text-color: rgb(0, 0, 0);
-    --nav-background-color: rgb(250, 250, 249);
     --nav-hover-color: rgb(181, 181, 181);
 
-    /* HAMBURGER NAV */
-    --hamburger-nav-background-color: rgb(250, 250, 249);
-    --hamburger-nav-text-color: rgb(0, 0, 0);
-
-    /* BUTTON */
-    --button-border-color: rgb(53, 53, 53);
-    --button-background-color: rgb(250, 250, 249);
-    --button-text-color: rgb(0, 0, 0);
-
     /* ABOUT */
-    --about-background-color: rgb(250, 250, 249);
-    --about-border-background-color: rgb(53, 53, 53);
     --about-border-color: rgb(163, 163, 163);
 
     /* SKILLS */
@@ -37,14 +22,10 @@
 
 
     /* EXPERIENCE */
-    --experience-background-color: rgb(250, 250, 249);
-    --experience-border-background-color: rgb(53, 53, 53);
     --experience-border-color: rgb(163, 163, 163);
     --experience-text-color: rgb(85, 85, 85);
-    --experience-title-color: rgb(0, 0, 0);
 
     /* CONTACT */
-    --contact-border-background-color: rgb(53, 53, 53);
     --contact-border-color: rgb(163, 163, 163);
 }
 
@@ -52,78 +33,20 @@
 
 .dark-mode {
     /* GENERAL */
-    --title-color: rgb(255, 255, 255);
-
-    /* BODY */
-    --body-text-color: rgb(85, 85, 85);
-    --body-background-color: rgb(14, 14, 12);
-
-    /* HEADER */
-    --header-background-color: rgb(14, 14, 12);
-
-    /* NAV */
-    --nav-text-color: rgb(255, 255, 255);
-    --nav-background-color: rgb(14, 14, 12);
-    --nav-hover-color: rgb(181, 181, 181);
-
-    /* HAMBURGER NAV */
-    --hamburger-nav-background-color: rgb(14, 14, 12);
-    --hamburger-nav-text-color: rgb(255, 255, 255);
-
-    /* BUTTON */
-    --button-border-color: rgb(53, 53, 53);
-    --button-background-color: rgb(14, 14, 12);
-    --button-text-color: rgb(255, 255, 255);
-
-    /* ABOUT */
-    --about-background-color: rgb(14, 14, 12);
-    --about-border-background-color: rgb(53, 53, 53);
-    --about-border-color: rgb(163, 163, 163);
-
-    /* SKILLS */
-    --skills-text-color: rgb(85, 85, 85);
-
-
-    /* EXPERIENCE */
-    --experience-background-color: rgb(14, 14, 12);
-    --experience-border-background-color: rgb(53, 53, 53);
-    --experience-border-color: rgb(163, 163, 163);
-    --experience-text-color: rgb(85, 85, 85);
-    --experience-title-color: rgb(255, 255, 255);
-
-    /* CONTACT */
-    --contact-border-background-color: rgb(53, 53, 53);
-    --contact-border-color: rgb(163, 163, 163);
-}
-
-.light-mode {
-        /* GENERAL */
-        --title-color: rgb(0, 0, 0);
-
+        --title-color: rgb(255, 255, 255);
+        --sub-title-color: rgb(197, 197, 197);
+        --section-title-color: rgb(140, 140, 115);
+        --background-color: rgb(14, 14, 12);
+        --text-color: rgb(255, 255, 255);
+        --border-color: rgb(140, 140, 115);
+    
         /* BODY */
         --body-text-color: rgb(85, 85, 85);
-        --body-background-color: rgb(250, 250, 249);
-    
-        /* HEADER */
-        --header-background-color: rgb(250, 250, 249);
     
         /* NAV */
-        --nav-text-color: rgb(0, 0, 0);
-        --nav-background-color: rgb(250, 250, 249);
         --nav-hover-color: rgb(181, 181, 181);
     
-        /* HAMBURGER NAV */
-        --hamburger-nav-background-color: rgb(250, 250, 249);
-        --hamburger-nav-text-color: rgb(0, 0, 0);
-    
-        /* BUTTON */
-        --button-border-color: rgb(53, 53, 53);
-        --button-background-color: rgb(250, 250, 249);
-        --button-text-color: rgb(0, 0, 0);
-    
         /* ABOUT */
-        --about-background-color: rgb(250, 250, 249);
-        --about-border-background-color: rgb(53, 53, 53);
         --about-border-color: rgb(163, 163, 163);
     
         /* SKILLS */
@@ -131,17 +54,63 @@
     
     
         /* EXPERIENCE */
-        --experience-background-color: rgb(250, 250, 249);
-        --experience-border-background-color: rgb(53, 53, 53);
         --experience-border-color: rgb(163, 163, 163);
         --experience-text-color: rgb(85, 85, 85);
-        --experience-title-color: rgb(0, 0, 0);
     
         /* CONTACT */
-        --contact-border-background-color: rgb(53, 53, 53);
+        --contact-border-color: rgb(163, 163, 163);
+}
+
+.light-mode {
+    /* GENERAL */
+        --title-color: rgb(0, 0, 0);
+        --sub-title-color: rgb(0, 0, 0);
+        --section-title-color: rgb(140, 140, 115);
+        --background-color: rgb(250, 250, 249);
+        --text-color: rgb(0, 0, 0);
+        --border-color: rgb(53, 53, 53);
+    
+        /* BODY */
+        --body-text-color: rgb(85, 85, 85);
+    
+        /* NAV */
+        --nav-hover-color: rgb(181, 181, 181);
+    
+        /* ABOUT */
+        --about-border-color: rgb(163, 163, 163);
+    
+        /* SKILLS */
+        --skills-text-color: rgb(85, 85, 85);
+    
+    
+        /* EXPERIENCE */
+        --experience-border-color: rgb(163, 163, 163);
+        --experience-text-color: rgb(85, 85, 85);
+    
+        /* CONTACT */
         --contact-border-color: rgb(163, 163, 163);
 }
 /* ANIMATION */
+
+@keyframes intro {
+    0% {
+        background-color: rgb(14, 14, 12);
+    }
+
+    100% {
+        background-color: var(--background-color);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes fade-right {
     0% {
@@ -195,6 +164,7 @@
 
 }
 
+
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -208,7 +178,7 @@
 body {
     font-family: "Poppins", sans-serif;
     padding-top: 17vh;
-    background-color: var(--body-background-color);
+    background-color: var(--background-color);
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -240,22 +210,44 @@ a,
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: var(--header-background-color);
+    background-color: var(--background-color);
     z-index: 1000;
-    animation: fade-down 1000ms 1000ms backwards;
+    animation: fade-down 1000ms 2000ms backwards;
     transition: background-color 0.5s;
 }
 
 /* DESKTOP NAV */
 
 #desktop-nav {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 0.75rem 1.25rem;
     justify-content: space-between;
 }
 nav,
 .nav-links {
     display: flex;
+    align-items: center;
+}
+
+.nav-info {
+    display: flex;
+    padding: 0.25rem 0.25rem;
+}
+
+.nav-btn {
+    margin-left: 20px;
+    transition: all 300ms ease;
+    padding: 0.75rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: var(--border-color) 0.1rem solid;
+    background: var(--border-color);
+    color: var(--background-color);
+    font-size: 1rem;
+}
+
+.nav-btn:hover {
+    background: var(--text-color);
+    border: var(--text-color) 0.1rem solid;
 }
 
 nav {
@@ -266,13 +258,13 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 a {
-    color: var(--nav-text-color);
+    color: var(--text-color);
     text-decoration: none;
-    text-decoration-color: var(--nav-background-color);
+    text-decoration-color: var(--background-color);
     transition: all 0.5s;
 }
 
@@ -284,7 +276,7 @@ a:hover {
 }
 
 .logo {
-    color: var(--nav-text-color);
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 700;
     transition: color 0.5s;
@@ -292,89 +284,6 @@ a:hover {
 
 .logo:hover {
     cursor: default;
-}
-
-/* HAMBURGER MENU */
-
-#hamburger-nav {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    justify-content: space-between;
-    display: none;
-}
-
-.hamburger-menu {
-    position: relative;
-    display: inline-block;
-}
-
-.hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: var(--hamburger-nav-text-color);
-    transition: transform 0.3s ease-in-out;
-}
-
-.menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: var(--hamburger-nav-background-color);
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-}
-
-.menu-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--hamburger-nav-text-color);
-    text-decoration: none;
-    transition: transform 0.3s ease-in-out;
-}
-
-.menu-links li {
-    list-style: none;
-}
-
-.menu-links.open {
-    max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-}
-
-.hamburger-icon span:first-child {
-    opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
 }
 
 /* SECTIONS */
@@ -398,14 +307,11 @@ section,
 /* PROFILE SECTION */
 
 #profile {
-    padding-top: 0;
     margin: 0% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    height: 80vh;
-    animation: fade-up 1000ms 1000ms backwards;
 }
 
 .section__text {
@@ -420,6 +326,7 @@ section,
 .section__text__p1 {
     font-size: 3rem;
     text-align: center;
+    animation: fade 1500ms 200ms backwards;
 }
 
 .section__text__p2 {
@@ -428,10 +335,12 @@ section,
 }
 
 .title {
-    font-size: 6rem;
+    font-size: 8vw;
     text-align: center;
     color: var(--section-title-color);
     transition: color 0.5s;
+    margin-bottom: 3rem;
+    animation: fade 1500ms 200ms backwards;
 }
 
 #socials-container {
@@ -439,6 +348,7 @@ section,
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+    animation: fade-up 1000ms 2000ms backwards;
 }
 
 /* ICONS */
@@ -454,7 +364,7 @@ section,
     display: flex;
     justify-content: center;
     gap: 1rem;
-    animation: fade-left 800ms 200ms backwards;
+    animation: fade-up 1000ms 2000ms backwards;
 }
 
 .btn {
@@ -467,7 +377,7 @@ section,
 
 .btn-color-1,
 .btn-color-2 {
-    border: var(--button-border-color) 0.1rem solid;
+    border: var(--border-color) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -477,12 +387,12 @@ section,
 
 .btn-color-1,
 .btn-color-2:hover {
-    background: var(--button-border-color);
-    color: var(--button-background-color);
+    background: var(--border-color);
+    color: var(--background-color);
 }
 
 .btn-color-1:hover {
-    background: var(--button-text-color);
+    background: var(--text-color);
 }
 
 .btn-color-2 {
@@ -490,7 +400,7 @@ section,
 }
 
 .btn-color-2:hover {
-    border: var(--button-background-color) 0.1rem solid;
+    border: var(--background-color) 0.1rem solid;
 }
 
 .btn-container {
@@ -517,7 +427,7 @@ section,
 }
 
 .about-pic {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 
@@ -540,9 +450,9 @@ section,
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: var(--about-background-color);
-    border-radius: 2rem;
-    border: var(--about-border-background-color) 0.1rem solid;
+    background: var(--background-color);
+    border-radius: 0.5rem;
+    border: var(--border-color) 0.1rem solid;
     border-color: var(--about-border-color);
     text-align: center;
 }
@@ -585,48 +495,47 @@ section,
 }
 
 .experience-text-box {
-    padding: 2rem 2rem;
-    background: rgb(250, 250, 249);;
+    padding: 0 2rem;
     border-radius: 0.5rem;
     position: relative;
 }
 
-.experience-text-box h2 {
+.experience-date {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    color: var(--section-title-color);
+}
+
+.experience-text-box h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: var(--text-color);
 }
 
 .experience-text-box h3 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 100;
-    color: rgb(0, 0, 0);
-}
-
-.experience-date {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
+    color: var(--sub-title-color);
 }
 
 .experience-location {
     margin-bottom: 1.5rem;
     font-size: 1rem;
-    color: rgb(0, 0, 0);
+    color: var(--section-title-color);
 }
 
 .experience-description {
     padding-left: 20px;
     font-size: 1rem;
-    color: rgb(28, 28, 28);
+    color: var(--section-title-color);
 }
 
 .experience-container li {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
     font-size: 1rem;
-    color: rgb(28, 28, 28);
+    color: var(--text-color);
 }
 
 .left-container {
@@ -657,7 +566,7 @@ section,
     left: calc(100% - var(--circle-diameter)/2);
     top: calc(var(--top) - (var(--circle-diameter) - var(--img-diameter)) / 2);
     border-radius: 50%;
-    background: rgb(140, 140, 115);
+    background: var(--section-title-color);
     z-index: 10;
 }
 
@@ -674,36 +583,13 @@ section,
     position: absolute;
     width: 5px;
     height: 100%;
-    background: rgb(140, 140, 115);
+    background: var(--section-title-color);
     top: 0;
     left: 50%;
     margin-left: -2.5px;
-    z-index: 1;
+    z-index: -10;
 }
 
-.left-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: calc(var(--top) + var(--circle-diameter)/2 - 15px);
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid rgb(250, 250, 249);;
-    right: 50px;
-}
-
-.right-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: calc(var(--top) + var(--circle-diameter)/2 - 15px);
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid rgb(250, 250, 249);;
-    left: 50px;
-}
 
 /* SKILLS SECTION */
 
@@ -796,12 +682,12 @@ section,
 
 .project-container {
     width: calc(50% - 20px);
-    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    border-color: var(--about-border-color);
+    background: var(--background-color);
 }
 
 .project-img-wrapper {
@@ -875,15 +761,15 @@ section,
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     border-radius: 2rem;
-    border: var(--experience-title-color) 0.1rem solid;
+    border: var(--section-title-color) 0.1rem solid;
     display: inline-block;
-    color: var(--experience-title-color)
+    color: var(--section-title-color)
 }
 
 .project-title {
     margin-top: 1rem;
-    color: var(--experience-title-color);
-    font-size: 1rem;
+    color: var(--title-color);
+    font-size: 1.5rem;
     font-weight: 100;
     width:80%;
     display: flex;
@@ -891,15 +777,15 @@ section,
 
 .project-sub-title {
     margin-top: 0.5rem;
-    color: var(--experience-text-color);
+    color: var(--sub-title-color);
     font-size: 1rem;
     font-weight: 100;
     width: 80%;
-        display: flex;
+    display: flex;
 }
 
 .project-btn {
-    color: var(--experience-title-color);
+    color: var(--title-color);
     border-color: var(--experience-border-color);
 }
 
@@ -921,8 +807,9 @@ section,
 
 .contact-form h2 {
     font-size: 4rem;
-    color: var(--body-text-color);
+    color: var(--text-color);
     margin-bottom: 1.5rem;
+    transition: color 0.5s;
 }
 
 .contact-form p {
@@ -932,8 +819,9 @@ section,
 
 .contact-info-container h2 {
     font-size: 2rem;
-    color: var(--body-text-color);
+    color: var(--text-color);
     margin-bottom: 1rem;
+    transition: color 0.5s;
 }
 
 .contact-form {
@@ -958,6 +846,7 @@ section,
     background-color: var(--background-color);
     outline: none;
     color: #666;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .contact-form .input-box textarea {
@@ -972,6 +861,7 @@ section,
     outline: none;
     color: #666;
     font-family: "Poppins", sans-serif;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .contact-form .input-box span {
@@ -996,9 +886,9 @@ section,
 
 .contact-form .input-box input[type="submit"] {
     width: 250px;
-    background: var(--button-border-color);
-    color: var(--button-background-color);
-    border: var(--button-border-color) 0.1rem solid;
+    background: var(--border-color);
+    color: var(--background-color);
+    border: var(--border-color) 0.1rem solid;
     transition: all 300ms ease;
     padding: 1rem;
     border-radius: 2rem;
@@ -1007,7 +897,7 @@ section,
 }
 
 .contact-form .input-box input[type="submit"]:hover {
-    background: var(--button-text-color);
+    background: var(--text-color);
 }
 
 .contact-info {
@@ -1031,28 +921,59 @@ section,
     color: #666;
 }
 
-.social-media li, .resume li{
+.social-media a, .resume a{
     cursor: pointer;
     color: #666;
     text-decoration: none;
-    text-decoration-color: var(--nav-background-color);
+    text-decoration-color: var(--background-color);
     transition: all 0.5s;
 }
 
-.social-media li:hover, .resume li:hover {
+.social-media a:hover, .resume a:hover {
     color: var(--nav-hover-color);
     text-underline-offset: 1rem;
     text-decoration-color: var(--nav-hover-color);
     transition: all 0.5s;
 }
+
+
 /* FOOTER SECTION */
 
 footer {
     bottom: 0%;
     padding-bottom: 1rem;
     margin: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 footer p {
-    text-align: center;
+    justify-content: center;
+}
+
+.back-to-top {
+    display: flex;
+    right: 0;
+    padding-right: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.back-to-top p{
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.back-to-top:hover p{
+    color: var(--nav-hover-color);
+}
+
+.back-to-top i {
+    transition: all 0.5s;
+}
+
+.back-to-top:hover i {
+    color: var(--nav-hover-color);
+    transform: translateY(-20px);
 }

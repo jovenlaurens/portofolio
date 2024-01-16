@@ -9,37 +9,25 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaqueries.css">
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/830e76151b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="intro-bg"></div>
     <header class="header">
         <nav id="desktop-nav">
             <div class="logo">Jovenln.</div>
-            <div>
+            <div class="nav-info">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="nav-btn" onclick="location.href='./#contact'">
+                    Contact me.
+                </button>
             </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Jovenln.</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
         </nav>
     </header>
     <div class="main">
@@ -47,7 +35,6 @@
             <div class="section__text">
                 <p class="section__text__p1">HEY! I'M</p>
                 <h1 class="title">JOVEN LAURENS NICHOLAS</h1>
-                <p class="section__text__p2">Undergraduate Student</p>
                 <div class="btn-container">
                     <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                         Download CV
@@ -67,14 +54,14 @@
             </div>
         </section>
         <section id="about">
-            <h1 id="about-title" class="title">&lt ABOUT  ME &gt</h1>
+            <h1 id="about-title" class="title" data-aos="fade-up">&lt ABOUT  ME &gt</h1>
             <div class="about-container">
                 <div class="about-pic-container">
                     <img src="./assets/profile-pic.jpg" alt="Profile picture" id="about-pic" class="about-pic" />
                 </div>
                 <div class="about-content-container">
                     <div id="about-content" class="about-content">
-                        <div class="about-details-container">
+                        <div class="about-details-container" data-aos="fade-up">
                             <div class="details-container">
                                 <img src="./assets/experience.png" alt="Experience icon" class="icon" />
                                 <h3>Experience</h3>
@@ -86,7 +73,7 @@
                                 <p>B.Sc. Electrical and Computer Engineering</p>
                             </div>
                         </div>
-                        <div class="text-container">
+                        <div class="text-container" data-aos="fade-up">
                             <p>
                                 I am a fourth-year undergraduate student from Indonesia, currently studying at Shanghai Jiao Tong University with a
                                 passion for artificial intelligence, residing in Shanghai, China.<br><br>
@@ -103,17 +90,16 @@
             </div>
         </section>
         <section id="experience">
-            <h1 class="title">&lt EXPERIENCES &gt</h1>
+            <h1 class="title" data-aos="fade-up">&lt EXPERIENCES &gt</h1>
             <div class="experience-list">
-                <div class="experience-container left-container">
+                <div class="experience-container left-container" data-aos="fade-up">
                     <span class="circle"></span>
                     <img src="./assets/company-1.png" />
                     <div class="experience-text-box">
-                        <h2>MACHINE LEARNING INTERN</h2>
-                        <h3>Shanghai Taize Semiconductor Co., Ltd</h3>
                         <p class="experience-date">Sep 2023 - Dec 2023</p>
-                        <p class="experience-location">Shanghai, China</p>
-                        <ul class="experience-description">
+                        <h2>Shanghai Taize Semiconductor Co., Ltd</h2>
+                        <h3>Machine Learning Intern</h3>
+                        <ul class="experience-description" >
                             <li>Led deep reinforcement learning and multi-agent reinforcement learning project, implementing AlphaZero algorithm
                                 using Pytorch on a blackjack game from scratch.</li>
                             <li>Utilized Monte Carlo Tree Search to determine the optimal moves for the agent.</li>
@@ -128,16 +114,14 @@
                             <li>Initiated a way to increase the efficiency of debugging C++ code by 53%.</li>
                         </ul>
                     </div>
-                    <span class="left-container-arrow"></span>
                 </div>
-                <div class="experience-container right-container">
+                <div class="experience-container right-container" data-aos="fade-up">
                     <span class="circle"></span>
                     <img src="./assets/company-2.png" />
                     <div class="experience-text-box">
-                        <h2>FRONT END WEB DEVELOPER INTERN</h2>
-                        <h3>Shanghai Jiaotong University</h3>
                         <p class="experience-date">Sep 2023 - Dec 2023</p>
-                        <p class="experience-location">Shanghai, China</p>
+                        <h2>Shanghai Jiaotong University</h2>
+                        <h3>Front End Web Developer Intern</h3>
                         <ul class="experience-description">
                             <li>Developed a personalized website for a pulmonary fibrosis lesion detection system based on image processing research
                                 at the Information System Technology Laboratory (IST) of the School of Software, Shanghai Jiaotong University.</li>
@@ -146,16 +130,14 @@
                             <li>Used JavaScript, CSS, and React.js in developing the websites.</li>
                         </ul>
                     </div>
-                    <span class="right-container-arrow"></span>
                 </div>
-                <div class="experience-container left-container">
+                <div class="experience-container left-container" data-aos="fade-up">
                     <span class="circle"></span>
                     <img src="./assets/company-3.png" />
                     <div class="experience-text-box">
-                        <h2>SOFTWARE ENGINEERING INTERN</h2>
-                        <h3>SJTU Silver Fans of Computer Science (SilverFOCS)</h3>
                         <p class="experience-date">May 2021 - July 2021</p>
-                        <p class="experience-location">Shanghai, China</p>
+                        <h2>SJTU Silver Fans of Computer Science (SilverFOCS)</h2>
+                        <h3>Software Engineering Intern</h3>
                         <ul class="experience-description">
                             <li>Collaborated with peers to create web browser games and presented them at the school's yearly expo.</li>
                             <li>Participated in weekly meetings with the supervisor, conducted code reviews with peers, and provided constructive
@@ -168,12 +150,11 @@
 
                         </ul>
                     </div>
-                    <span class="left-container-arrow"></span>
                 </div>
             </div>
         </section>
         <section id="skills">
-            <h1 class="title">&lt MY TOOL KITS &gt</h1>
+            <h1 class="title" data-aos="fade-up">&lt MY TOOL KITS &gt</h1>
             <div class="skills-details-container">
                 <div class="skills-list">
                     <div class="skills-containers">
@@ -265,24 +246,21 @@
         </section>
         <section id="projects">
             <div class="container">
-                <h1 class="title">&lt PROJECTS &gt</h1>
+                <h1 class="title" data-aos="fade-up">&lt PROJECTS &gt</h1>
                 <div class="desktop">
                     <div class="main_row">
                         <div class="main-project-container">
                             <div class="project-img-wrapper">
                                 <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
                                 <div class="project-links">
-                                    <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                        <i class="fab fa-github fa-3x"></i>
-                                    </a>
-                                    <a href="https://www.yourwebsite.com" class="project-link">
-                                        <i class="fas fa-link fa-3x"></i>
+                                    <a href="https://github.com/jovenlaurens/image-classifier" target="_blank" class="project-link">
+                                        <i class="fab fa-github fa-8x"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="project-tag">2023</div>
                             <div class="project-tag">Python · Pytorch</div>
-                            <h2 class="project-title">IMAGE CLUSTERING</h2>
+                            <h2 class="project-title">IMAGE CLASSIFIER</h2>
                             <h3 class="project-sub-title">Unsupervised Convolutional Neural Network</h3>
                         </div>
                     </div>
@@ -292,68 +270,56 @@
                             <div class="project-img-wrapper">
                                 <img src="./assets/project-2.png" alt="Project 1" class="project-img" />
                                 <div class="project-links">
-                                    <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                        <i class="fab fa-github fa-3x"></i>
-                                    </a>
-                                    <a href="https://www.yourwebsite.com" class="project-link">
-                                        <i class="fas fa-link fa-3x"></i>
+                                    <a href="https://github.com/jovenlaurens/maze-solver" target="_blank" class="project-link">
+                                        <i class="fab fa-github fa-5x"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="project-tag">2023</div>
                             <div class="project-tag">Python</div>
-                            <h2 class="project-title">Maze Solver</h2>
+                            <h2 class="project-title">MAZE SOLVER</h2>
                             <h3 class="project-sub-title">Ant Colony Optimization</h3>
                         </div>
                         <div class="project-container">
                             <div class="project-img-wrapper">
                                 <img src="./assets/project-3.png" alt="Project 1" class="project-img" />
                                 <div class="project-links">
-                                    <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                        <i class="fab fa-github fa-3x"></i>
-                                    </a>
-                                    <a href="https://www.yourwebsite.com" class="project-link">
-                                        <i class="fas fa-link fa-3x"></i>
+                                    <a href="https://github.com/jovenlaurens/memoria" target="_blank" class="project-link">
+                                        <i class="fab fa-github fa-5x"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="project-tag">2021</div>
                             <div class="project-tag">HTML · CSS · Javascript · Elm · Git</div>
-                            <h2 class="project-title">Memoria</h2>
+                            <h2 class="project-title">MEMORIA</h2>
                             <h3 class="project-sub-title">Web Browser Game</h3>
                         </div>
                         <div class="project-container">
                             <div class="project-img-wrapper">
                                 <img src="./assets/project-4.png" alt="Project 1" class="project-img" />
                                 <div class="project-links">
-                                    <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                        <i class="fab fa-github fa-3x"></i>
-                                    </a>
-                                    <a href="https://www.yourwebsite.com" class="project-link">
-                                        <i class="fas fa-link fa-3x"></i>
+                                    <a href="https://github.com/jovenlaurens/apollo" target="_blank" class="project-link">
+                                        <i class="fab fa-github fa-5x"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="project-tag">2021</div>
                             <div class="project-tag">HTML · CSS · Javascript · Elm · Git</div>
-                            <h2 class="project-title">Apollo</h2>
+                            <h2 class="project-title">APOLLO</h2>
                             <h3 class="project-sub-title">Web Browser Game</h3>
                         </div>
                         <div class="project-container">
                             <div class="project-img-wrapper">
                                 <img src="./assets/project-5.png" alt="Project 1" class="project-img" />
                                 <div class="project-links">
-                                    <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                        <i class="fab fa-github fa-3x"></i>
-                                    </a>
-                                    <a href="https://www.yourwebsite.com" class="project-link">
-                                        <i class="fas fa-link fa-3x"></i>
+                                    <a href="https://github.com/jovenlaurens/onecard" target="_blank" class="project-link">
+                                        <i class="fab fa-github fa-5x"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="project-tag">2020</div>
                             <div class="project-tag">C · Linux · Git</div>
-                            <h2 class="project-title">Apollo</h2>
+                            <h2 class="project-title">ONE CARD</h2>
                             <h3 class="project-sub-title">Terminal Based Game</h3>
                         </div>
                     </div>
@@ -366,85 +332,70 @@
                                 <div class="project-img-wrapper">
                                     <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
                                     <div class="project-links">
-                                        <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                            <i class="fab fa-github fa-3x"></i>
-                                        </a>
-                                        <a href="https://www.yourwebsite.com" class="project-link">
-                                            <i class="fas fa-link fa-3x"></i>
+                                        <a href="https://github.com/jovenlaurens/image-classifier" target="_blank" class="project-link">
+                                            <i class="fab fa-github fa-5x"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="project-tag">2023</div>
                                 <div class="project-tag">Python · Pytorch</div>
-                                <h2 class="project-title">IMAGE CLUSTERING</h2>
+                                <h2 class="project-title">IMAGE CLASSIFIER</h2>
                                 <h3 class="project-sub-title">Unsupervised Convolutional Neural Network</h3>
                             </div>
                             <div class="project-container">
                                 <div class="project-img-wrapper">
                                     <img src="./assets/project-2.png" alt="Project 1" class="project-img" />
                                     <div class="project-links">
-                                        <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                            <i class="fab fa-github fa-3x"></i>
-                                        </a>
-                                        <a href="https://www.yourwebsite.com" class="project-link">
-                                            <i class="fas fa-link fa-3x"></i>
+                                        <a href="https://github.com/jovenlaurens/maze-solver" target="_blank" class="project-link">
+                                            <i class="fab fa-github fa-5x"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="project-tag">2023</div>
                                 <div class="project-tag">Python</div>
-                                <h2 class="project-title">Maze Solver</h2>
+                                <h2 class="project-title">MAZE SOLVER</h2>
                                 <h3 class="project-sub-title">Ant Colony Optimization</h3>
                             </div>
                             <div class="project-container">
                                 <div class="project-img-wrapper">
                                     <img src="./assets/project-3.png" alt="Project 1" class="project-img" />
                                     <div class="project-links">
-                                        <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                            <i class="fab fa-github fa-3x"></i>
-                                        </a>
-                                        <a href="https://www.yourwebsite.com" class="project-link">
-                                            <i class="fas fa-link fa-3x"></i>
+                                        <a href="https://github.com/jovenlaurens/memoria" target="_blank" class="project-link">
+                                            <i class="fab fa-github fa-5x"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="project-tag">2021</div>
                                 <div class="project-tag">HTML · CSS · Javascript · Elm · Git</div>
-                                <h2 class="project-title">Memoria</h2>
+                                <h2 class="project-title">MEMORIA</h2>
                                 <h3 class="project-sub-title">Web Browser Game</h3>
                             </div>
                             <div class="project-container">
                                 <div class="project-img-wrapper">
                                     <img src="./assets/project-4.png" alt="Project 1" class="project-img" />
                                     <div class="project-links">
-                                        <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                            <i class="fab fa-github fa-3x"></i>
-                                        </a>
-                                        <a href="https://www.yourwebsite.com" class="project-link">
-                                            <i class="fas fa-link fa-3x"></i>
+                                        <a href="https://github.com/jovenlaurens/apollo" target="_blank" class="project-link">
+                                            <i class="fab fa-github fa-5x"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="project-tag">2021</div>
                                 <div class="project-tag">HTML · CSS · Javascript · Elm · Git</div>
-                                <h2 class="project-title">Apollo</h2>
+                                <h2 class="project-title">APOLLO</h2>
                                 <h3 class="project-sub-title">Web Browser Game</h3>
                             </div>
                             <div class="project-container">
                                 <div class="project-img-wrapper">
                                     <img src="./assets/project-5.png" alt="Project 1" class="project-img" />
                                     <div class="project-links">
-                                        <a href="https://www.github.com/yourlink" target="_blank" class="project-link">
-                                            <i class="fab fa-github fa-3x"></i>
-                                        </a>
-                                        <a href="https://www.yourwebsite.com" class="project-link">
-                                            <i class="fas fa-link fa-3x"></i>
+                                        <a href="https://github.com/jovenlaurens/onecard" target="_blank" class="project-link">
+                                            <i class="fab fa-github fa-5x"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="project-tag">2020</div>
                                 <div class="project-tag">C · Linux · Git</div>
-                                <h2 class="project-title">One Card</h2>
+                                <h2 class="project-title">ONE CARD</h2>
                                 <h3 class="project-sub-title">Terminal Based Game</h3>
                             </div>
                         </div>
@@ -453,11 +404,11 @@
             </div>
         </section>
         <section id="contact">
-            <h1 class="title">&lt CONTACT ME &gt</h1>
+            <h1 class="title" data-aos="fade-up">&lt CONTACT ME &gt</h1>
             <div class="contact-container">
                 <div class="contact-form">
-                    <h2>Send Message</h2>
-                    <p>I am looking for internship or full-time opportunities in tech companies.</p>
+                    <h2 data-aos="fade-up">Send Message</h2>
+                    <p data-aos="fade-up">I am looking for internship or full-time opportunities in tech companies.</p>
                     <form action="/submit" method="post" onsubmit="sendEmail(); reset(); return false;">
                         <div class="input-box">
                             <input id="name" type="text" name="" required="required">
@@ -501,12 +452,16 @@
                         <div class="social-media">
                             <ul>
                                 <li>
-                                    <i class="fa-brands fa-github"></i>
-                                    Github
+                                    <a href="https://github.com/jovenlaurens" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                        Github
+                                    </a>
                                 </li>
                                 <li>
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                    Linkedin
+                                    <a href="https://www.linkedin.com/in/jovenln" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        Linkedin
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -516,8 +471,10 @@
                         <div class="resume">
                             <ul>
                                 <li>
-                                    <i class="fa-solid fa-file"></i>
-                                    Download CV
+                                    <a href="./assets/resume.pdf" target="_blank">
+                                        <i class="fa-solid fa-file"></i>
+                                        Download CV
+                                    </a>
                                 </li>
                             </ul>
                         </div>    
@@ -527,7 +484,11 @@
         </section>
     </div>
     <footer>
-        <p>Copyright &#169; 2024 Joven Laurens Nicholas. All Rights Reserved.</p>
+        <p>&#169; 2024 Joven Laurens Nicholas.</p>
+        <div class="back-to-top" onclick="location.href='./#profile'">
+            <p>Back to Top</p>
+            <i class="fa-solid fa-arrow-up fa-2x"></i>
+        </div>
     </footer>
     <script src="script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -536,6 +497,30 @@
         (function () {
             emailjs.init("MhIkKjcVua8N2kr9p");
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 0, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 1000, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
     </script>
 </body>
 </html>

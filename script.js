@@ -1,10 +1,28 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
+// Intro Animation
+const intro = document.querySelector('.intro-bg');
 
+document.addEventListener('DOMContentLoaded', (e)=>{
+    setTimeout(()=>{
+        intro.classList.remove('intro-bg');
+    }, 2000);
+})
+
+// Scrolling Animation
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+});
+
+
+// Switch Dark and Light Mode
 window.addEventListener('scroll', () => {
     const section1 = document.getElementById('projects');
     const section2 = document.getElementById('experience');
@@ -50,7 +68,7 @@ function sendEmail() {
     
     const serviceID = "service_kt2yeqe";
     const templateID = "template_pf7ddi2";
-    
+
     emailjs.send(serviceID, templateID, params)
     .then(
         res => {
