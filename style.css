@@ -308,7 +308,7 @@ section,
 
 #profile {
     margin: 0% 5%;
-    display: flex;
+    padding-top: 5vh;
     justify-content: center;
     align-items: center;
     gap: 5rem;
