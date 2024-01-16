@@ -70,11 +70,7 @@
 /* MOBILE VIEW */
 
 @media screen and (max-width: 768px) {
-    body {
-        padding-top: 10vh;
-    }
 
-    /* PROFILE */
     .section__text .section__text__p1 {
         font-size: 3rem;
     }
