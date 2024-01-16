@@ -177,7 +177,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    padding-top: 10vh;
+    padding-top: 17vh;
     background-color: var(--background-color);
     transition: background-color 0.5s, color 0.5s;
     width: 100%;
@@ -680,6 +680,10 @@ section,
 .main-row {
     width: 100%;
     display: flex;
+}
+
+.main-project-container {
+    margin-bottom: 2rem;
 }
 
 .project-container {
