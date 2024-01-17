@@ -180,7 +180,7 @@
     
     /* EXPERIENCE */
     .experience-list {
-        padding-left: 25px;
+        padding-left: 0px;
     }
 
     .experience-text-box {
@@ -217,7 +217,7 @@
     }
 
     .experience-list::after {
-        left: 52.5px;
+        left: 27.5px;
         margin-left: -2.5px;
     }
 
