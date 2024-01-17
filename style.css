@@ -177,7 +177,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    padding-top: 17vh;
+    padding-top: 20vh;
     background-color: var(--background-color);
     transition: background-color 0.5s, color 0.5s;
     width: 100%;
@@ -457,6 +457,10 @@ section,
     text-align: center;
 }
 
+.details-container p, .details-container h3 {
+    font-size: 1.2rem;
+}
+
 .section-container {
     gap: 4rem;
     height: 80%;
@@ -471,7 +475,7 @@ section,
 .text-container {
     margin-top: 2rem;
     line-height: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /* EXPERIENCE SECTION */
@@ -503,20 +507,20 @@ section,
 
 .experience-date {
     margin-bottom: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--section-title-color);
 }
 
 .experience-text-box h2 {
     margin-bottom: 1rem;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
 .experience-text-box h3 {
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 100;
     color: var(--sub-title-color);
 }
@@ -529,13 +533,13 @@ section,
 
 .experience-description {
     padding-left: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--section-title-color);
 }
 
 .experience-container li {
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text-color);
 }
 
