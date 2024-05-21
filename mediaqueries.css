@@ -61,9 +61,17 @@
     .about-containers {
         margin-top: 0;
     }
+
+    .skills-group-container {
+        width: 100%;
+    }
     
     .skills-containers {
         width: calc(100% / 2);
+    }
+
+    .skills-title {
+        font-size: 6vw;
     }
 }
 
@@ -117,7 +125,7 @@
     }
 
     .header nav {
-            height: 60px;
+        height: 60px;
     }
 
     #profile {

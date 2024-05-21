@@ -603,12 +603,12 @@ section,
 }
 
 .skills-group-container {
-    width: 100%;
-    margin-bottom: 4rem;
+    width: calc(50% - 20px);
+    margin-bottom: 2rem;
 }
 
 .skills-title {
-    font-size: 6vw;
+    font-size: 3vw;
     text-align: center;
     color: var(--skills-text-color);
     transition: color 0.5s;
@@ -618,9 +618,8 @@ section,
 
 .skills-details-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .skills__img { 
@@ -651,7 +650,7 @@ section,
 }
 
 .skills-containers {
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     display: flex;
     justify-content: center;
     position: relative;
