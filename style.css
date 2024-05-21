@@ -602,6 +602,20 @@ section,
     position: relative;
 }
 
+.skills-group-container {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.skills-title {
+    font-size: 6vw;
+    text-align: center;
+    color: var(--skills-text-color);
+    transition: color 0.5s;
+    margin-bottom: 3rem;
+    animation: fade 1500ms 200ms backwards;
+}
+
 .skills-details-container {
     display: flex;
     flex-direction: column;
@@ -610,7 +624,7 @@ section,
 }
 
 .skills__img { 
-    width: 80%;
+    width: 90%;
     max-width: 120px;
     transition: all 0.3s;
     filter: contrast(90%);
